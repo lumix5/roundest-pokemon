@@ -70,7 +70,7 @@ const PokemonListing: React.FC<{ pokemon: PokemonFromServer, vote: () => void }>
   }
 
   return (<div className="flex flex-col items-center justify-center w-3/4 h-3/4">
-    <img src={PokemonImg} className="w-6/6" />
+    {PokemonImg && <img src={PokemonImg} className="w-6/6" />}
     <div className="text-xl text-center capitalize cursor-default">
       {PokemonName}
     </div>
